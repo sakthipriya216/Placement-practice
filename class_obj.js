@@ -5,6 +5,9 @@ function bellBoy(name, age, isWorking, language)
     this.age = age;
     this.isWorking = isWorking;
     this.language = language;
+    this.pickItem = function(){
+        alert("Picking the bags!");
+    }
 }
 
 // creating objects and objects is created using new keyword followed by class name
@@ -14,3 +17,4 @@ var bellboy2 = new bellBoy("Sanjana", 20, true, ['tamil']);
 // class variables can be accessed by using obj.attribute
 console.log(bellboy1.language[1]);
 console.log(bellboy2);
+bellboy1.pickItem();
